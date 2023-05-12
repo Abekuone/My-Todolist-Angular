@@ -1,47 +1,77 @@
 
-<u><h1>Liste des taches  a faire</h1></u>
+<!-- C'est le html d'affichage de la liste des taches -->
 
-<p>
-	<button class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>Ajouter</button> 
-</p>
+
+<h1>Liste des taches  a faire</h1><br>
 
 <div class="row">
 	<div class="container">
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>Numero</th>
+					<th>Id</th>
 					<th>Taches</th>
+					<th>Heures</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>1</td>
-					<td>Aller à ODC</td>
+					<td>Aller à ODC terminer ma formation Angular</td>
+					<td>09H-12H</td>
 					<td>
-						<a href="task-add.component.html" class="btn btn-info"><i class="bi bi-eye"></i>Voir</a>	
+						<a href="" class="btn btn-info"><i class="bi bi-eye"></i>Afficher</a>
+						<button type="button" class="btn btn-success"><i class="bi bi-check2-square"></i>Marquer</button>	
 						<a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Supprimer</a>
 					</td>
 				</tr>
 				<tr>
 					<td>2</td>
-					<td>Reparrtir à la maison</td>
+					<td>Suivre un Webinar sur ChatGPT </td>
+					<td>15H-17H</td>
 					<td>
-						<a href="task-add.component.html" class="btn btn-info"><i class="bi bi-eye"></i>Voir</a>
+						<a href="" class="btn btn-info"><i class="bi bi-eye"></i>Afficher</a>
+						<button type="button" class="btn btn-success"><i class="bi bi-check2-square"></i>Marquer</button>
 						<a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Supprimer</a>
 					</td>
 				</tr>
 				<tr>
 					<td>3</td>
-					<td>Aller au campus</td>
+					<td>Travailler sur le projet de groupe Java</td>
+					<td>14H-18H</td>
 					<td>
-						<a href="task-add.component.html" class="btn btn-info"><i class="bi bi-eye"></i>Voir</a>
+						<a href="" class="btn btn-info"><i class="bi bi-eye"></i>Afficher</a>
+						<button type="button" class="btn btn-success"><i class="bi bi-check2-square"></i>Marquer</button>
+						<a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Supprimer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Création de la maquette Détails Événement</td>
+					<td>19H-21H</td>
+					<td>
+						<a href="" class="btn btn-info"><i class="bi bi-eye"></i>Afficher</a>
+						<button type="button" class="btn btn-success"><i class="bi bi-check2-square"></i>Marquer</button>
+						<a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Supprimer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Suivre un documentaire</td>
+					<td>21H-23H</td>
+					<td>
+						<a href="" class="btn btn-info"><i class="bi bi-eye"></i>Afficher</a>
+						<button type="button" class="btn btn-success"><i class="bi bi-check2-square"></i>Marquer</button>
 						<a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Supprimer</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+</div><br>
+<div class="d-grid gap-2 col-2 mx-auto">
+	<button class="btn btn-primary" routerLink="./add-task"><i class="bi bi-plus-circle-fill"></i>Ajouter nouvelle tache</button> 
 </div>
+
 

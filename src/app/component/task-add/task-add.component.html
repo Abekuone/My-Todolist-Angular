@@ -1,2 +1,35 @@
 
 <h1>Page d'ajout des taches </h1>
+
+<div>
+	<div>
+		<h3>Via un lien</h3>
+		<button class="btn btn-primary" routerLink=""><i class="bi bi-arrow-left-circle-fill"></i>Retourner</button>
+	</div><br>
+
+	<h3>Via une fonction</h3>
+	<!-- [formGroup]="taskForm" (ngSubmit)="Onsubmit" -->
+	<form >
+
+		<!-- Champ id pour le id-->
+		<!-- form-group -->
+	  <div class="">
+	    <label for="Id" class="form-label">Id</label>
+		<input type="number" class="form-control" id="Id" aria-describedby="Id" required min="0">
+	  </div>
+
+	  <!-- Champ texte pour la tache -->
+	  <!-- form-group -->
+	  <div class="">
+	    <label for="Tache" class="form-label">Tache</label>
+	    <input type="text" class="form-control" id="tache" required>
+	  </div>
+
+	  <!-- Bouton de validation -->
+
+	<!-- [disabled]="taskForm.invalid"  -->
+	  <button type="submit" class="btn btn-primary"><i class="bi bi-check-circle"></i>Valider</button>
+
+	</form>
+
+</div>

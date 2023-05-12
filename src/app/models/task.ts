@@ -1,4 +1,7 @@
+
 export class Task {
-	'numero'
-	'tache'
+	constructor(
+		public id :id,
+		public title: title,
+		){ }
 }
